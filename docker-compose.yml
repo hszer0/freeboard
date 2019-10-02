@@ -1,10 +1,10 @@
 version: "2"
 
 services:
-    nginx:
+    freeboard:
         image: nginx:1.13
         volumes_from:
-            - freeboard:ro
-    freeboard:
+            - freeboardbuild:ro
+    freeboardbuild:
         image: freeboard
         build: .
