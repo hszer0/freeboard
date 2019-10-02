@@ -3,8 +3,6 @@ version: "2"
 services:
     nginx:
         image: nginx:1.13
-        ports:
-            - "8003:80"
         volumes_from:
             - freeboard:ro
     freeboard:
